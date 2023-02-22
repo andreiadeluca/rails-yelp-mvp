@@ -29,5 +29,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_22_112839) do
     t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
   end
 
-  add_foreign_key "reviews", "restaurants"
+  add_foreign_key 'reviews', 'restaurants'
 end
