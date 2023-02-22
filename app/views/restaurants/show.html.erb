@@ -1,3 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @restaurant %>
+
+<div>
+  <%= link_to "Back to restaurants", restaurants_path %>
+</div>
+
 
 <%= simple_form_for [@restaurant, @review] do |f| %>
   <%= f.input :content, placeholder: "Write your review here" %>

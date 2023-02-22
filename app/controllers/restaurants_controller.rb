@@ -18,6 +18,11 @@ class RestaurantsController < ApplicationController
     redirect_to restaurants_path(@restaurant)
   end
 
+  def destroy
+    @restaurant.destroy
+    redirect_to restaurants_url, notice: "Restaurant was successfully destroyed."
+  end
+
   private
 
   def restaurant_params

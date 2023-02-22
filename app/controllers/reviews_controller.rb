@@ -16,6 +16,7 @@ class ReviewsController < ApplicationController
     redirect_to restaurants_path(@restaurant)
   end
 
+
   private
 
   def set_restaurant
